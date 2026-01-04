@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Waste Smart Solution</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>E-Waste Smart</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" data-page="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-page="recycling">Recycling Centers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-page="rewards">Rewards</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-page="about">About</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <section id="home" class="page active">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Your Small Step in Recycling, Our Smart Leap Towards a Cleaner Bharat</h1>
+                <p>India generates 1.6 million tonnes of e-waste annually. Join the solution with our smart recycling platform [file:1].</p>
+                <div class="hero-buttons">
+                    <a href="#recycling" class="btn btn-primary">Find Centers</a>
+                    <a href="#rewards" class="btn btn-secondary">Earn Rewards</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <h3>1.6M+</h3>
+                    <p>Tonnes E-Waste Yearly</p>
+                </div>
+                <div class="stat">
+                    <h3>90%+</h3>
+                    <p>Informal Sector</p>
+                </div>
+                <div class="stat">
+                    <h3>0%</h3>
+                    <p>Excuses Left</p>
+                </div>
+            </div>
+        </div>
+        <div class="features">
+            <div class="feature">
+                <h3>📱 Easy Access</h3>
+                <p>Find authorized centers near you instantly.</p>
+            </div>
+            <div class="feature">
+                <h3>🎖️ Rewards System</h3>
+                <p>Earn points, badges, and vouchers for recycling [file:1].</p>
+            </div>
+            <div class="feature">
+                <h3>✅ Verified Drop-offs</h3>
+                <p>QR verification ensures proper recycling.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recycling Centers Page -->
+    <section id="recycling" class="page">
+        <div class="container">
+            <h1>Find Authorized Recycling Centers</h1>
+            <div class="search-bar">
+                <input type="text" id="centerSearch" placeholder="Enter your location (e.g., Jaipur, Delhi...)">
+                <button onclick="searchCenters()">Search</button>
+            </div>
+            <div class="centers-grid" id="centersGrid">
+                <!-- Centers populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Rewards Page -->
+    <section id="rewards" class="page">
+        <div class="container">
+            <h1>Rewards & Gamification</h1>
+            <div class="rewards-hero">
+                <div class="points-display">
+                    <h2 id="userPoints">250</h2>
+                    <p>Your Points</p>
+                </div>
+                <div class="streak-display">
+                    <h3>7 Day Streak 🔥</h3>
+                    <p>Keep it going!</p>
+                </div>
+            </div>
+            <div class="rewards-grid">
+                <div class="reward-card">
+                    <h3>🪙 Points</h3>
+                    <p>50 points per verified drop-off [file:1].</p>
+                </div>
+                <div class="reward-card">
+                    <h3>🏆 Badges</h3>
+                    <p>30-day challenge badges.</p>
+                </div>
+                <div class="reward-card">
+                    <h3>🎫 Vouchers</h3>
+                    <p>Redeem for services & discounts [file:1].</p>
+                </div>
+                <div class="reward-card">
+                    <h3>📜 Certificates</h3>
+                    <p>Official recognition documents.</p>
+                </div>
+            </div>
+            <div class="redeem-section">
+                <h3>Redeem Your Points</h3>
+                <select id="voucherSelect">
+                    <option value="100">Food Voucher (100 pts)</option>
+                    <option value="250">Shopping Voucher (250 pts)</option>
+                    <option value="500">Service Credit (500 pts)</option>
+                </select>
+                <button onclick="redeemVoucher()" class="btn btn-primary">Redeem</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="page">
+        <div class="container">
+            <h1>About E-Waste Smart Solution</h1>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Solving India's E-Waste Crisis</h2>
+                    <p>90%+ of India's e-waste is handled by informal sector, creating health & environmental hazards [file:1].</p>
+                    <p>Our platform connects citizens with authorized recyclers through gamification and rewards.</p>
+                    
+                    <h3>Key Features:</h3>
+                    <ul>
+                        <li>Nearby authorized center locator</li>
+                        <li>QR verification for drop-offs</li>
+                        <li>Points, badges, and voucher rewards [file:1]</li>
+                        <li>AI-powered education & motivation</li>
+                        <li>Smart City Mission integration</li>
+                    </ul>
+                </div>
+                <div class="about-phases">
+                    <h3>Our Roadmap</h3>
+                    <div class="phase">
+                        <h4>Phase 1</h4>
+                        <p>MVP with maps & rewards</p>
+                    </div>
+                    <div class="phase">
+                        <h4>Phase 2</h4>
+                        <p>Pilot in one city</p>
+                    </div>
+                    <div class="phase">
+                        <h4>Phase 3</h4>
+                        <p>Scale across India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="new.js"></script>
+</body>
+</html>
